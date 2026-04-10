@@ -1,0 +1,177 @@
+/* Main Footer Wrapper */
+.footer {
+  background-color: #1f2937; /* Dark Gray / Black */
+  color: #ffffff;
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+  margin-top: auto; /* Pushes footer to bottom of page if content is short */
+}
+
+/* Container for Flexbox Grid */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Individual Columns */
+.footer-section {
+  flex: 1;
+  min-width: 200px; /* Prevents columns from getting too squished */
+  margin-bottom: 20px;
+}
+
+/* Section Titles */
+.footer-section h3 {
+  color: #f97316; /* Saffron color */
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Underline under section titles */
+.footer-section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40px;
+  height: 3px;
+  background-color: #f97316;
+}
+
+/* Brand Section (Logo + Text) */
+.brand-section p {
+  color: #9ca3af; /* Light gray text */
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer-logo-wrapper h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Quick Links List */
+.links-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-section ul li {
+  margin-bottom: 10px;
+}
+
+.links-section ul li a {
+  text-decoration: none;
+  color: #9ca3af;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.links-section ul li a:hover {
+  color: #f97316; /* Saffron on hover */
+  padding-left: 5px; /* Tiny jump effect on hover */
+}
+
+/* Contact Info */
+.contact-section p {
+  color: #9ca3af;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Social Media Section */
+.social-section p {
+  color: #9ca3af;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #374151; /* Lighter gray box */
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #f97316; /* Turns saffron on hover */
+  transform: translateY(-3px); /* Lifts up slightly */
+}
+
+/* Copyright Bottom Bar */
+.footer-bottom {
+  background-color: #111827; /* Darker black */
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* ============================
+   📱 Mobile & Tablet Responsiveness 
+   ============================ */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns instead of 4 */
+    gap: 40px;
+  }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* 1 single column */
+    text-align: center; /* Center everything on phones */
+  }
+
+  /* Center the titles and underlines on mobile */
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-logo-wrapper {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
