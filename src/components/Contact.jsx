@@ -33,7 +33,7 @@ const ContactWhite = () => {
             <FaEnvelope />
           </div>
           <h3>Email</h3>
-          <p>andemshankar630@gmail.com</p>
+          <p>Jagan.sugurthi@gmail.com</p>
           <span>We respond within 24 hours</span>
         </div>
 
@@ -42,8 +42,8 @@ const ContactWhite = () => {
             <FaPhoneAlt />
           </div>
           <h3>Phone</h3>
-          <p>+91 9652984415</p>
-          <span>Mon–Fri (9am – 6pm)</span>
+          <p>+91 9440238692</p>
+          <span>Mon–sun (24/7)</span>
         </div>
 
         <div className="card">

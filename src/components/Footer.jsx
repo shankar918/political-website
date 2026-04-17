@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="footer-section brand-section">
           <div className="footer-logo-wrapper">
             <img src={logo} alt="BJP Logo" className="footer-logo" />
-            <h2>BJP Political</h2>
+            <h2>jagadeshwaraChary Sugurthi</h2>
           </div>
           <p>
             Dedicated to Progress, Unity, and Development.
@@ -34,9 +34,9 @@ export default function Footer() {
         {/* Section 3: Contact Info */}
         <div className="footer-section contact-section">
           <h3>Contact Us</h3>
-          <p>📍Hyderabad, India</p>
-          <p>📞 +91 9652984415</p>
-          <p>✉️ contact@bjppolitical.com</p>
+          <p>📍Karimnagar, India</p>
+          <p>📞 +91+9440238692</p>
+          <p>✉️ Jagan.sugurthi@gmail.com</p>
         </div>
 
         {/* Section 4: Social Media */}

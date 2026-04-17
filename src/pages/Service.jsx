@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-// import logo from "../assets/banner1";
+import img1 from "../assets/banner1.jpeg";
+// import img1 from "../assets/sideimg.jpeg"
 import {
   FaTools,
   FaUniversity,
@@ -20,7 +21,7 @@ export default function Service() {
       icon: <FaTools />,
       title: "Public Issue Resolution",
       desc: "Report and track issues like roads, water, and electricity quickly.",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800",
+      image: img1,
       longDesc: "Our dedicated portal allows citizens to upload photos of local issues. Once submitted, a ticket is generated and assigned to the relevant department with a 48-hour response guarantee. We bridge the gap between people and bureaucracy.",
       color: "#4e73df"
     },
@@ -29,7 +30,7 @@ export default function Service() {
       icon: <FaUniversity />,
       title: "Government Schemes",
       desc: "Guidance for applying to welfare schemes and claiming benefits.",
-      image: "https://images.unsplash.com/photo-1541872703-74c5e443d1fe?auto=format&fit=crop&q=80&w=800",
+      image: img1,
       longDesc: "Many citizens miss out on benefits because of complex paperwork. We provide a step-by-step guide and digital assistance for Pension schemes, Student scholarships, and Farmer subsidies.",
       color: "#f6ad55"
     },
@@ -38,7 +39,7 @@ export default function Service() {
       icon: <FaCalendarCheck />,
       title: "Book an Appointment",
       desc: "Schedule a one-on-one meeting with your representative easily.",
-      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800",
+      image: img1,
       longDesc: "Direct communication is the key to democracy. Use our automated system to book a 15-minute slot at the constituency office to discuss your concerns directly with the leadership.",
       color: "#38b2ac"
     },
@@ -47,7 +48,7 @@ export default function Service() {
       icon: <FaBuilding />,
       title: "Development Projects",
       desc: "Track ongoing infrastructure projects like schools and hospitals.",
-      image: "https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=800",
+      image: img1,
       longDesc: "Transparency in tax-payer money usage. View real-time progress, budget allocation, and completion dates for new schools, clinics, and community centers in your area.",
       color: "#9f7aea"
     },
@@ -56,7 +57,7 @@ export default function Service() {
       icon: <FaUsers />,
       title: "Join the Movement",
       desc: "Volunteer with our team to bring real change to society.",
-      image: "https://images.unsplash.com/photo-1559027615-cd7607c1f3cf?auto=format&fit=crop&q=80&w=800",
+      image: img1,
       longDesc: "Change starts with you. Join our 500+ volunteer network to help in cleanliness drives, blood donation camps, and digital literacy programs.",
       color: "#ed64a6"
     },
@@ -65,7 +66,7 @@ export default function Service() {
       icon: <FaAmbulance />,
       title: "Emergency Assistance",
       desc: "Immediate support and coordination during medical urgencies.",
-      image: "https://images.unsplash.com/photo-1587748803976-68572bd0af2d?auto=format&fit=crop&q=80&w=800",
+      image: img1,
       longDesc: "Our 24/7 helpline coordinates with local hospitals and ambulance services to ensure that no citizen is left without care during a medical emergency.",
       color: "#e53e3e"
     },
@@ -188,7 +189,7 @@ function DetailModal({ service, onClose }) {
               src={service.image} 
               alt={service.title} 
               className="w-100 h-100" 
-              style={{ objectFit: "cover", minHeight: "300px" }}
+              style={{ objectFit: "cover", height: "100px", width:"100px" }}
             />
           </div>
           <div className="col-md-7 p-4 p-md-5">
